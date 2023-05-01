@@ -99,6 +99,6 @@ public class FileServiceImpl implements FileService {
     private boolean typeControlFile(String fileName) {
         Optional<String> type = getFileType(fileName);
         boolean bool = FileConstants.constans.contains(type.get().toLowerCase());
-        return false;
+        return bool;
     }
 }
