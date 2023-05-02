@@ -33,7 +33,7 @@ public class FileController {
         return service.listFile();
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/id/{id}")
     public FileModel getByIdFile(@PathVariable("id") Integer id){
         return service.getFileById(id);
     }
